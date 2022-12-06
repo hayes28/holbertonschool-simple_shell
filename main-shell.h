@@ -7,6 +7,10 @@
 #include <string.h>
 #include <unistd.h>
 
+/* MAIN.C PROTOTYPES */
+
+int main(int ac, char **argv);
+ssize_t getline(char **lineptr, size_t *n, FILE *stream); /* GETLINE PROTOTYPE */
 
 /* STRING PROTOTYPES */
 
