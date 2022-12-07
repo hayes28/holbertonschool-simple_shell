@@ -1,7 +1,7 @@
 #include "main-shell.h"
 
 /**
- * main - entry point, Printing a prompt for our simple shell
+ * main - Printing a prompt for our simple shell
  * @ac: argument count
  * @argv: array of passed arguments
  *
@@ -31,7 +31,7 @@ int main(int ac, char **argv)
 	if (nchars_read == -1)
 	{
 		printf("Shell is exiting...\n");
-		return (-1); /*return -1 if exit fail*/
+		return (-1); 				/*return -1 if exit fail*/
 	}
 	lineptr_copy = malloc(sizeof(char) * nchars_read);
 	/* allocates space for a copy of the lineptr */
@@ -72,7 +72,7 @@ int main(int ac, char **argv)
 	printf("%s\n", lineptr);
 	}
 
-	free(lineptr_copy);/*frees allocated memory*/
+	free(lineptr_copy);		/*frees allocated memory*/
 	free(lineptr);
 
 
