@@ -1,13 +1,14 @@
 #ifndef MAIN_SHELL_H
 #define MAIN_SHELL_H
 
-#include "main-shell.h"
+#include <sys/types.h>
+#include <sys/stat.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
 
-/* MAIN.C PROTOTYPES */
+/* FUNCTION PROTOTYPES */
 int main(int ac, char **argv);
 
 /* GETLINE PROTOTYPE */

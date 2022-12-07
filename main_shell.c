@@ -24,9 +24,9 @@ int main(int ac, char **argv)
 	while (1)
 	{			/* creating infinite loop to execute until user stops*/
 
-	printf("%s", prompt);
-	nchars_read = getline(&lineptr, &n, stdin);
-	/*checks getline function success or when EOF is reached*/
+		printf("%s", prompt);
+		nchars_read = getline(&lineptr, &n, stdin);
+		/*checks getline function success or when EOF is reached*/
 
 	if (nchars_read == -1)
 	{
@@ -70,9 +70,11 @@ int main(int ac, char **argv)
 	argv[i] = NULL;
 
 	printf("%s\n", lineptr);
-
-	free(lineptr);/*frees allocated memory*/
 	}
+
+	free(lineptr_copy);/*frees allocated memory*/
+	free(lineptr);
+
 
 	return (0);
 }
