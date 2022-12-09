@@ -9,7 +9,7 @@
  */
 int main(__attribute__((unused)) int ac, char **argv)
 {
-	char *prompt = "(simple_shell) $ ", *lineptr = NULL, *line_copy = NULL, *tok;
+	char *prompt = "($) ", *lineptr = NULL, *line_copy = NULL, *tok;
 	size_t n = 0;
 	ssize_t nchars_read;
 	int i, num_tokens = 0;
