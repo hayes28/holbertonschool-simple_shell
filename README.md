@@ -9,6 +9,11 @@ Simple Shell is a program made to take commands and pass them to standard output
   
 </div>
 
+<h2>Table of Contents</h2>
+<p align="center">
+<a href="#overview">Overview</a> | <a href="#glossary">Glossary</a> | <a href="#compilers">Compiler</a> | <a href="#authors">Authors</a>
+</p>
+
 We will be using HSH to read and interpert our code to standard output
 To compile our shell you will be using the gcc command.
 Example:
