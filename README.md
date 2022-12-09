@@ -1,7 +1,7 @@
 <p align="center">
 <h1>0x17. C - Simple Shell Project</h1>
 Simple Shell is a program made to take commands and pass them to standard output and verifies command inputs from the user.
-
+\n
 We will be using HSH to read and interpert our code to standard output
 To compile our shell you will be using the gcc command.
 Example:
