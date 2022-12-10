@@ -16,7 +16,7 @@ Simple Shell is a program made to take commands and pass them to standard output
 <h1>Overview</h1>
 Check main-shell.h for header contents.
 This file will contain used prototypes as well as all libraries included for completeing this project. Please refer to this README for info on how to compile program, what is contained in each file and credits to this contribution.
-----------------------------------------------------------------------
+<p class="hidden">A hidden border.</p>
 We will be using HSH to read and interpert our code to standard output
 To compile our shell you will be using the gcc command.
 Example:
