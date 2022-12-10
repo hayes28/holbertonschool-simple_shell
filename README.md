@@ -49,6 +49,8 @@ This file will contain used prototypes as well as all libraries included for com
   </tr>
 </table>
 
+<h1>Compiler</h1>
+
 We will be using HSH to read and interpert our code to standard output
 To compile our shell you will be using the gcc command.
 Example:
