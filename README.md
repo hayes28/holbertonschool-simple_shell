@@ -20,9 +20,10 @@ This file will contain used prototypes as well as all libraries included for com
 
 
 
+<h1>Glossary</h1>
 
 
-<p id="borderimg"></p>
+<h1>Compiler</h1>
 
 
 We will be using HSH to read and interpert our code to standard output
