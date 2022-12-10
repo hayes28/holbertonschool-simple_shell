@@ -11,7 +11,7 @@ Simple Shell is a program made to take commands and pass them to standard output
 
 <h2>Table of Contents</h2>
 <p align="center">
-<a href="#overview">Overview</a> | <a href="#compiler">Compiler</a> | <a href="#glossary">Glossary</a> | <a href="#authors">Authors</a>
+<a href="#overview">Overview</a> | <a href="#glossary">Glossary</a> | <a href="#compiler">Compiler</a> | <a href="#authors">Authors</a>
 </p>
 
 <h1>Overview</h1>
@@ -20,8 +20,6 @@ This file will contain used prototypes as well as all libraries included for com
 
 
 
-
-<h1>Compiler</h1>
 
 
 <h1>Glossary</h1>
