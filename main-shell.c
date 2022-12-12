@@ -19,8 +19,7 @@ int main(int argc, char *argv[])
 
 	while (1)
 	{
-		if (isatty(STDIN_FILENO))
-			write(STDOUT_FILENO, "$ ", 2);
+		line = prompt(PROMPT);
 
 		if (line == NULL)
 			return (-1);
