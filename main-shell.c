@@ -73,7 +73,6 @@ char *prompt(char *prompt)
 	/* Check for getline() failure or EOF (Ctrl + D) */
 	if (nchars == -1)
 	{
-		printf("\nBye\n");
 		return (NULL);
 	}
 
