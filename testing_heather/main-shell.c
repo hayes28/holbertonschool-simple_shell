@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
  * main - builtins work with prompt to make interactive
  *
  * @argc: num of chars
@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 
 	while (1)
 	{
-		line = prompy(PROMPT);
+		line = &prompt(PROMPT);
 		if (line == NULL)
 			return (-1);
 /* Spilt the input line and execute the command */
@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
 		env_cmd();
 		free(line);
 		free(cmd);
-		countine;
+		continue;
 	}
 
 		exec_cmd(cmd);
@@ -62,10 +62,7 @@ char *prompt(char *prompt)
 	size_t n = 0;
 	ssize_t nchars;
 
-/*
-* getline wants the line pointer to be set to NULL
-* to reserve space for it
-*/
+/*getline wants the line pointer to be set to NULL to reserve space for it */
 
 	char *line = NULL;
 

@@ -40,18 +40,18 @@ int exec_cmd(char **cmd)
 			return (-1);
 		}
 	} else
-		waitpid(child_pid, &stat_loc, WUNTRACED);
+	waitpid(child_pid, &stat_loc, WUNTRACED);
 
 	free(path);
 	return (0);
 }
 
 /**
-  * is_file_exists - checks if a file exists
+  * file_exists - checks if a file exists
   * @path: filesystem path
   * Return: 1 if file exists, 0 otherwise
   */
-int is_file_exists(char *path)
+int file_exists(char *path)
 {
 	struct stat statbuf;
 
@@ -92,7 +92,7 @@ char *get_cmd_path(char *cmd)
 		strcat(path, cmd);
 		strcat(path, "\0");
 
-		if (is_file_exists(path))
+		if (file_exists(path))
 		{
 			free(paths);
 			return (path);

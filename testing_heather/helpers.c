@@ -56,10 +56,10 @@ char **split_string(char *str, char *delimiter)
   */
 void print_array(char **array)
 {
+	int i = 0;
+
 	if (array == NULL)
 		return;
-
-	int i = 0;
 
 	while (array[i] != NULL)
 	{

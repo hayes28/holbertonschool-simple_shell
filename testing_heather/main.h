@@ -7,6 +7,8 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <unistd.h>
+#include <wait.h>
+#include <sys/wait.h>
 #define PROMPT "$ "
 #define CMD_DELIMITERS " \n"
 /* environment prototypes */
@@ -14,7 +16,7 @@
 extern char **environ;
 
 int exec_cmd(char **cmd);
-int is_file_exists(char *path);
+int file_exists(char *path);
 char *get_cmd_path(char *cmd);
 
 /* string prototypes */
@@ -24,8 +26,6 @@ void print_array(char **array);
 
 /* builtin commands */
 int main(int argc, char *argv[]);
-extern char **environ;
-
 void env_cmd(void);
-
+char *promptshell(char *prompt);
 #endif
