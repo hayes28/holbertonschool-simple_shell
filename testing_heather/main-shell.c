@@ -1,44 +1,8 @@
-#define	 _GNU_SOURCE
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
-#include "string_utils.h"
-#include "utils.h"
-#include "builtins.h"
-
-#define PROMPT "> "
-#define CMD_DELIMITERS " \n"
-
-
-char *prompt(char *prompt)
-{
-	size_t n = 0;
-	ssize_t nchars;
+#include "main.h"
 
 /*
-* getline wants the line pointer to be set to NULL
-* to reserve space for it
-*/
-
-	char *line = NULL;
-
-	/* Print the prompt and read the input from the user */
-	printf("%s", prompt);
-	nchars = getline(&line, &n, stdin);
-
-	/* Check for getline() failure or EOF (Ctrl + D) */
-	if (nchars == -1)
-	{
-		printf("\nBye\n");
-		return (NULL);
-	}
-
-	return (line);
-}
-
-/*
- * main - entry point
+ * main - builtins work with prompt to make interactive
+ *
  * @argc: num of chars
  * @argv: chars
  *
@@ -84,4 +48,37 @@ int main(int argc, char *argv[])
 		free(cmd);
 	}
 	return (0);
+}
+
+/**
+ * prompt - printing a prompt for our simple shell
+ * @prompt: the prompt
+ *
+ * Return: line
+ */
+
+char *prompt(char *prompt)
+{
+	size_t n = 0;
+	ssize_t nchars;
+
+/*
+* getline wants the line pointer to be set to NULL
+* to reserve space for it
+*/
+
+	char *line = NULL;
+
+	/* Print the prompt and read the input from the user */
+	printf("%s", prompt);
+	nchars = getline(&line, &n, stdin);
+
+	/* Check for getline() failure or EOF (Ctrl + D) */
+	if (nchars == -1)
+	{
+		printf("\nBye\n");
+		return (NULL);
+	}
+
+	return (line);
 }
