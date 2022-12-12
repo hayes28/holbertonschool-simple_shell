@@ -19,7 +19,9 @@ int main(int argc, char *argv[])
 
 	while (1)
 	{
-		line = prompt(PROMPT);
+		if (isatty(STDIN_FILENO))
+			write(STDOUT_FILENO, "$ ", 2);
+
 		if (line == NULL)
 			return (-1);
 /* Spilt the input line and execute the command */
