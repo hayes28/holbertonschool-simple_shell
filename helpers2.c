@@ -70,7 +70,7 @@ char *get_cmd_path(char *cmd)
 {
 	char *path_env, **paths, *path;
 	int i = 0;
-    size_t path_size;
+	size_t path_size;
 
 	if (cmd == NULL)
 		return (NULL);
