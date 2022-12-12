@@ -81,4 +81,7 @@ hsh main.c shell.c test_ls_2
 $
 ```
 <h1>Authors</h1>
-<p><a href=""</a></p>
+<a href="https://github.com/jobabyyy">
+  <img src="https://avatars.githubusercontent.com/u/71939488?s=400&u=b2c4fc7cc9177cd2359dd656202e9156a350275c&v=4" />
+</a>
+
