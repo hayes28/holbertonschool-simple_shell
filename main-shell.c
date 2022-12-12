@@ -68,7 +68,8 @@ char *prompt(char *prompt)
 	char *line = NULL;
 
 	/* Print the prompt and read the input from the user */
-	printf("%s", prompt);
+	if (isatty(STDIN_FILENO))
+		write(STDOUT_FILENO, "$ ", 2);
 	nchars = getline(&line, &n, stdin);
 
 	/* Check for getline() failure or EOF (Ctrl + D) */
