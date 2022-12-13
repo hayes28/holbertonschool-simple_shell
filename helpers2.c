@@ -96,7 +96,7 @@ char *get_cmd_path(char *cmd)
 			free(paths);
 			return (path);
 		}
-		
+
 		free(path);
 		++i;
 	}
