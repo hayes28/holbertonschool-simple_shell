@@ -28,4 +28,5 @@ void print_array(char **array);
 int main(int argc, char *argv[]);
 void env_cmd(void);
 char *prompt(char *prompt);
+void exitshell(char **arr, char *buffer, int status);
 #endif
