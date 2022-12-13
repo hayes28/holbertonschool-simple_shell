@@ -61,13 +61,14 @@ char *prompt(char *prompt)
 {
 	size_t n = 0;
 	ssize_t nchars;
+  
 /*getline wants the line pointer to be set to NULL to reserve space for it */
 
 	char *line = NULL;
 
 	/* Print the prompt and read the input from the user */
 	printf("%s", prompt);
-
+  
 	nchars = getline(&line, &n, stdin);
 
 	/* Check for getline() failure or EOF (Ctrl + D) */

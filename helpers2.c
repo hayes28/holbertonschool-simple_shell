@@ -71,6 +71,7 @@ char *get_cmd_path(char *cmd)
 	char *path_env, **paths, *path;
 	int i = 0;
 	size_t path_size;
+	struct stat s;
 
 	if (cmd == NULL)
 		return (NULL);
@@ -99,7 +100,10 @@ char *get_cmd_path(char *cmd)
 		free(path);
 		++i;
 	}
-
+	if (stat(cmd, &s) == 0)
+	{
+		return (cmd);
+	}
 	free(paths);
 	return (NULL);
 }

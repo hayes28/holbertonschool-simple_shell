@@ -32,20 +32,32 @@ This file will contain used prototypes as well as all libraries included for com
 
   <tr>
     <td>1</td>
-    <td>filename</td>
-    <td>des</td>
+    <td>main.c</td>
+    <td>contains our main functions to test terminal inputs</td>
   </tr>
 
   <tr>
     <td>2</td>
-    <td>filename</td>
-    <td>des</td>
+    <td>main-shell.h</td>
+    <td>header file with all our libraries and prototypes</td>
   </tr>
     
   <tr>
     <td>2</td>
-    <td>filename</td>
-    <td>Des</td>
+    <td>helpers.c</td>
+    <td>includes functions for main.c support</td>
+  </tr>
+  
+  <tr>
+    <td>2</td>
+    <td>helpers2.c</td>
+    <td>includes functions for execute commands and execute if file exists</td>
+  </tr>
+  
+  <tr>
+    <td>2</td>
+    <td>builtin.c</td>
+    <td>includes arguments</td>
   </tr>
 </table>
 
@@ -81,4 +93,10 @@ hsh main.c shell.c test_ls_2
 $
 ```
 <h1>Authors</h1>
-<p><a href=""</a></p>
+<a href="https://github.com/jobabyyy">
+  <img src="https://avatars.githubusercontent.com/u/71939488?s=400&u=b2c4fc7cc9177cd2359dd656202e9156a350275c&v=4" width="200" height="200" />
+</a>
+
+<a href="https://github.com/hayes28">
+  <img src="https://avatars.githubusercontent.com/u/107968573?v=4" width="200" height="200" />
+</a>
