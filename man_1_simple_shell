@@ -1,1 +1,51 @@
-placeholder
+.TH SIMPLE_SHELL "December 12, 2022" "simple shell Manual"
+
+
+
+.SH NAME
+.B simeple_shell \- Simple Shell Holberton Project
+
+
+
+.SH SYNOPSIS
+.B ./hsh
+	A simple mini shell that runs in both interactive and noninteractive mode. It still has limitations as of now.
+
+
+
+.SH DESCRIPTION
+	This shell can accept, interpret and execute commands given by standard input.
+
+
+
+.SH BUILTINS
+	a couple examples below of a few commands that are accepted.
+./hsh will activate interactive mode.
+
+	special characters such as | (pipe) can be used in noninteractive mode.
+
+
+
+.B ls
+	[[flags]...[arguments]]
+	lists files in the current working directory.
+
+	-l list in long listing format, one per line.
+
+	-a list all files including hidden ones.
+
+
+
+.B pwd
+	prints working directory
+
+
+
+.SH BUGS
+	No known bugs, please report any issues to the authors. Keep in mind it is a work in progress.
+
+
+
+.SH AUTHORS
+Heather Hayes <5549@holbertonstudents.com>
+Johanna Avila <5528@holbertonstudents.com>
