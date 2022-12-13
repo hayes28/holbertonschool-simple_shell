@@ -32,20 +32,32 @@ This file will contain used prototypes as well as all libraries included for com
 
   <tr>
     <td>1</td>
-    <td>filename</td>
-    <td>des</td>
+    <td>main.c</td>
+    <td>contains our main functions to test terminal inputs</td>
   </tr>
 
   <tr>
     <td>2</td>
-    <td>filename</td>
-    <td>des</td>
+    <td>main-shell.h</td>
+    <td>header file with all our libraries and prototypes</td>
   </tr>
     
   <tr>
     <td>2</td>
-    <td>filename</td>
-    <td>Des</td>
+    <td>helpers.c</td>
+    <td>includes functions for main.c support</td>
+  </tr>
+  
+  <tr>
+    <td>2</td>
+    <td>helpers2.c</td>
+    <td>includes functions for execute commands and execute if file exists</td>
+  </tr>
+  
+  <tr>
+    <td>2</td>
+    <td>builtin.c</td>
+    <td>includes arguments</td>
   </tr>
 </table>
 
